@@ -1,7 +1,110 @@
-.someClass {
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
+.input {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    line-height: 14px;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.counter {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.label {
+    color: #bbb;
+    font-size: 11px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 14px;
+    padding: 0 2px;
+    pointer-events: none;
+    background: white;
+    transition: transform 100ms ease;
+}
+
 .error {
+    position: relative;
+    padding: 10px 20px;
+    color: #555;
+    font-size: 13px;
+    border-radius: 20px;
+    outline: none;
     border: 1px solid red;
+}
+
+.error:focus + .label {
+    color: #ff0000;
+    transform: translateY(-20px);
+}
+
+.normal {
+    position: relative;
+    padding: 10px 20px;
+    color: #555;
+    font-size: 13px;
+    border: 1px solid #bbb;
+    border-radius: 20px;
+    outline: none;
+}
+
+.normal:invalid + .label {
+    transform: translateY(0);
+}
+
+.normal:focus {
+    border-color: #2b96f1;
+}
+
+.normal:focus + .label {
+    color: #2b96f1;
+    transform: translateY(-20px);
+}
+
+.button {
+    display: flex;
+    align-self: center;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    font-family: 'Montserrat', sans-serif;
+    color: #3e3c3c;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    appearance: none;
+    font-size: .5rem;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 0.6em;
+    border-color: #8f8f94;
+    box-sizing: border-box;
+    box-shadow: 0 0 40px 40px #fdfdfd inset, 0 0 0 0 #a8a8b3;
+    transition: all 300ms ease-in-out;
+
+}
+
+.button:hover {
+    box-shadow: 0 0 10px 0 #65656b inset, 0 0 10px 4px #7d7d8a;
+}
+
+.button:hover,
+.button:focus {
+    color: #535050;
+    outline: 0;
+}
+
+.mistake {
+    margin: 0 auto;
 }
