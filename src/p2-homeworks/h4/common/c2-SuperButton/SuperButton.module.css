@@ -1,7 +1,13 @@
 .default {
-
+    background-color: #00B4CC;
 }
 
 .red {
     background: red;
+}
+
+button:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: .3;
 }
