@@ -4,7 +4,7 @@ import {AffairPriorityType, AffairType, FilterType} from './HW2';
 
 type AffairsPropsType = { // need to fix any
   data: AffairPriorityType
-  setFilter: (filter: FilterType) => void
+  setFilter: (id:FilterType) => void
   deleteAffairCallback: (id: number) => void
 }
 
@@ -18,8 +18,8 @@ function Affairs(props: AffairsPropsType) {
       />
   ))
 
-  const buttonValue = (event: any) => {
-    props.setFilter(event.target.textContent.toLowerCase())
+  const buttonValue = (event:any) => {
+    props.setFilter(event.currentTarget.textContent.toLowerCase())
   }
   // const setAll = () => {}; // need to fix
   // const setHigh = () => {};
