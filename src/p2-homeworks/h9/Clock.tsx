@@ -12,7 +12,7 @@ function Clock() {
     const start = () => {
         stop();
         const id: number = window.setInterval(() => {
-            // setDate
+         Date.now()
         }, 1000);
         setTimerId(id);
     }
