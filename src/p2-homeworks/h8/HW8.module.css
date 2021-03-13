@@ -15,10 +15,12 @@ th, td {
     border: 1px solid grey;
     width: 20%;
 }
+
 td:first-child {
     width: 30%;
 }
-.buttonWrapper{
+
+.buttonWrapper {
     display: flex;
     justify-content: center;
     column-gap: 20px;
