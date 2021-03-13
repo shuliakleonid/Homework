@@ -4,7 +4,6 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 import {UserType} from './bll/tests/homeWorkReducer.test';
 import s from './HW8.module.css'
 
-
 export const initialPeople: UserType[] = [
   {_id: 0, name: 'Кот', age: 3},
   {_id: 1, name: 'Александр', age: 66},
@@ -16,14 +15,12 @@ export const initialPeople: UserType[] = [
 
 function HW8() {
   const [people, setPeople] = useState(initialPeople);
-
   const finalPeople = people.map(p => (
       <tr key={p._id}>
         <td>{p.name}</td>
         <td>{p.age}</td>
       </tr>
   ))
-
   const sortUp = () => setPeople(() => homeWorkReducer(initialPeople, sortedList('up')))
   const sortDown = () => setPeople(() => homeWorkReducer(initialPeople, sortedList('down')))
   const checkAge = () => setPeople(() => homeWorkReducer(initialPeople, sortedAge(18)))
