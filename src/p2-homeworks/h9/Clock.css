@@ -1,0 +1,31 @@
+.clock {
+    font-family: Roboto;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #111;
+    transition: .5s;
+}
+
+.clock > h1 {
+    padding: 1rem;
+    font-size: 5em;
+    transition: .2s;
+}
+.date{
+    font-family: Roboto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #111;
+    font-size: 3em;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
