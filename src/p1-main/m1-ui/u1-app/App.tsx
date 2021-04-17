@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './App.module.css';
-import HW10 from '../../../p2-homeworks/h10/HW10';
+import HW12 from '../../../p2-homeworks/h12/HW12';
 
 function App() {
   return (
@@ -15,7 +15,9 @@ function App() {
         {/*<HW7/>*/}
         {/*<HW8/>*/}
         {/*<HW9/>*/}
-        <HW10/>
+        {/*<HW10/>*/}
+        {/*<HW11/>*/}
+        <HW12/>
 
       </div>
   );

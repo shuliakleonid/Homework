@@ -10,7 +10,6 @@ export const loadingReducer = (state: initStateProps = initState, action: Action
   switch (action.type) {
     case 'SET_LOADING': {
       debugger
-      console.log({...state, ...action.payload})
       return {...state, ...action.payload};
     }
     default:
